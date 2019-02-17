@@ -81,7 +81,8 @@ export default class App extends Component {
       </form>
 
       
-      {/* <TextAnalysis /> */}
+      <TextAnalysis />
+      
       <List>
         {exercises.map(({ id, title }) =>
           <ListItem key={id}>
