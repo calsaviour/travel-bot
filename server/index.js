@@ -50,7 +50,7 @@ app.get('/api/test', (req, res) => {
   res.send(JSON.stringify({ greeting: `Hello test` }));
 });
 
-
-app.listen(3001, () =>
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () =>
   console.log('Express server is running on localhost:3001')
 );
